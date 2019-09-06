@@ -1,7 +1,7 @@
 {
-    "name": "nativescript-imagecropper",
-    "version": "1.0.7",
-    "description": "NativeScript Image Cropper Plugin",
+    "name": "nativescript-imagecropper-ios",
+    "version": "1.0.0",
+    "description": "NativeScript Image Cropper Plugin For IOS",
     "main": "imagecropper",
     "typings": "index.d.ts",
     "nativescript": {

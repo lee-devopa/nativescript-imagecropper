@@ -114,12 +114,10 @@ export class ImageCropper {
           page = vc;
         }
         
-        if (_options.lockSquare) {
-          viewController.aspectRatioPreset = TOCropViewControllerAspectRatioPreset.PresetSquare;
-          viewController.aspectRatioLockEnabled = true; // The crop box is locked to the aspect ratio and can't be resized away from it
-          viewController.aspectRatioPickerButtonHidden = true;
-          viewController.resetAspectRatioEnabled = false;
-        }
+        viewController.customAspectRatio = CGSizeMake(_options.ratioWidth, _options.ratioHeight);
+        viewController.aspectRatioLockEnabled = true; // The crop box is locked to the aspect ratio and can't be resized away from it
+        viewController.aspectRatioPickerButtonHidden = true;
+        viewController.resetAspectRatioEnabled = false;
         page.presentViewControllerAnimatedCompletion(viewController, true, function () {
           if (_options) {
             if (_options.width && _options.height) {

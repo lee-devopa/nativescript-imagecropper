@@ -4,6 +4,8 @@ export interface OptionsCommon {
   width?: number;
   height?: number;
   lockSquare?: boolean;
+  ratioWidth: number;
+  ratioHeight: number;
 }
 
 export interface Result {
